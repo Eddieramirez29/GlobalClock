@@ -1,0 +1,14 @@
+.card-container 
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 500px; /* Ajusta según necesidad */
+  margin: auto;
+}
+
+.card {
+  border: 1px solid black;
+  height: 200px;
+  border-radius: 10px;
+}
