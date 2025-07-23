@@ -55,7 +55,9 @@ function App() {
       {Array.from({ length: 4 }).map((_, i) => 
         (
           <div className="card" key={i}
-          style={{ border: switcher ? "1px solid white" : "1px solid black"}}
+          style={{ border: switcher ? "1px solid white" : "1px solid black",
+            boxShadow: switcher ? "0 5px 0px white" : "0 5px 0px black" 
+          }}
           >
             <div className="head-card">
               <div className="country" style={{ color: switcher ? " white" : " black"}}>Mexico</div>

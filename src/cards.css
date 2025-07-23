@@ -9,9 +9,10 @@
 
 .card 
 {
-  border: 1px solid black;
-  height: 200px;
-  border-radius: 10px;
+    border: 1px solid black;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 5px 0px black;
 }
 
 .head-card
