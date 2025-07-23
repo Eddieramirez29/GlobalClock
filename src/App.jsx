@@ -32,7 +32,9 @@ function App() {
       </button>
 
       {isOpen && (
-        <ul className="dropdown-menu">
+        <ul className="dropdown-menu" style={{ backgroundColor: switcher ? " black" : " white",
+          color: switcher ? " white" : " black"
+        }}>
           {options.map((option) => (
           <li
           key={option}
