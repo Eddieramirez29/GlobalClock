@@ -22,4 +22,86 @@
     justify-content: center;
     align-items: center;
     background-color: #28B6AD;
+    box-shadow: 0 5px 0px rgba(0, 0, 0, 0.2); /* Sombra exterior */
+}
+
+
+
+#toggleButton 
+{
+  /* Dimensiones y forma */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px; /* Ajusta el padding para el tamaño */
+  border-radius: 20px; /* Bordes redondeados */
+  border: 1px solid #99c2d1; /* Borde sutil */
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.8) inset, /* Sombra interior para el brillo */
+    0 -1px 0 rgba(0, 0, 0, 0.1) inset, /* Sombra interior inferior */
+    0 1px 2px rgba(0, 0, 0, 0.2); /* Sombra exterior */
+
+  /* Fondo (Gradiente) */
+  background: linear-gradient(to bottom, #d8eaf5 0%, #b2d6e7 100%);
+
+  /* Fuente */
+  font-family: Arial, sans-serif; /* Tipo de letra similar */
+  font-size: 16px;
+  font-weight: bold;
+  color: #335969; /* Color del texto */
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6); /* Sombra del texto */
+  
+}
+
+/* Contenedor del menú desplegable (ul) */
+.dropdown-menu {
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  
+  /* Estilos de borde y esquinas */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+
+  /* Estilos de fondo y sombra para un aspecto flotante */
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  
+  /* Opciones de la lista */
+  list-style-type: none;
+  max-height: 250px;
+  overflow-y: auto;
+  
+  /* Propiedades de visualización */
+  z-index: 100;
+}
+
+/* Estilos para cada elemento del menú (li) */
+.dropdown-item {
+  padding: 12px 18px;
+  cursor: pointer;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  
+  /* Transición para el efecto hover */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Estilos al pasar el cursor sobre los elementos */
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+  color: #007bff;
+}
+
+/* Asegurar que las esquinas del primer y último elemento sean redondeadas */
+.dropdown-menu .dropdown-item:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.dropdown-menu .dropdown-item:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }

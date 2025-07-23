@@ -5,6 +5,18 @@ import './cards.css';
 function App() {
 
   const [switcher, setSwitcher] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [selected, setSelected] = useState('Choose a city');
+
+  const options = ['Opción 1', 'Opción 2', 'Opción 3'];
+
+  const toggleDropdown = () => setIsOpen(!isOpen);
+
+  const handleOptionClick = (option) => 
+  {
+    setSelected(option);
+    setIsOpen(false);
+  };
 
   const changeBodyColor = () =>
   {
@@ -13,6 +25,30 @@ function App() {
 
   return (
     <>
+    
+      <div style={{ position: 'relative', width: '200px' }}>
+      <button onClick={toggleDropdown} style={{ width: '100%' }} id='toggleButton'>
+        {selected}
+      </button>
+
+      {isOpen && (
+        <ul className="dropdown-menu">
+          {options.map((option) => (
+          <li
+          key={option}
+          onClick={() => handleOptionClick(option)}
+          className="dropdown-item"
+        >
+          {option}
+    </li>
+  ))}
+</ul>
+
+      )}
+    </div>
+
+
+
       <div className="card-container">
       {Array.from({ length: 4 }).map((_, i) => 
         (
@@ -42,8 +78,9 @@ function App() {
         changeBodyColor();
       }}>
       {switcher ? 'White' : 'Dark'}
-    </button>
+      </button>
     </div>
+
     </>
   );
 }
