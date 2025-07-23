@@ -6,5 +6,5 @@ You can also change the theme from white to black and from black to white.
 
 Technologies: HTML, CSS and React + Vite.
 
-![Vista previa](./GlobalClock/image.png)
+![Vista previa](./image.png)
 
