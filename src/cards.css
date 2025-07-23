@@ -27,13 +27,13 @@
 .country
 {
     margin-left: 20px;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .UTC
 {
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .center
@@ -48,6 +48,6 @@
     justify-content: center;
     align-items: center;
     height: 100px;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bolder;
 }
