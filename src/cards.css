@@ -10,7 +10,7 @@
 .card 
 {
     border: 1px solid black;
-    height: 200px;
+    height: 180px;
     border-radius: 10px;
     box-shadow: 0 5px 0px black;
 }
